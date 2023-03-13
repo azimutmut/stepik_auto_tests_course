@@ -104,6 +104,5 @@ class TestRegistr(unittest.TestCase):
         welcome_text = welcome_text_elt.text
         self.assertEqual("Congratulations! You have successfully registered!", welcome_text)
 
-
 if __name__ == "__main__":
     unittest.main()
