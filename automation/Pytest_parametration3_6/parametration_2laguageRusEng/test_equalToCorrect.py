@@ -31,7 +31,13 @@ class TestRegistr(unittest.TestCase):
         a = str(math.log(int(time.time())))
         input1= browser.find_element(By.ID, 'ember94').send_keys(a)
         time.sleep(2)
-        # browser.find_element(By.XPATH, '//*[@id="ember79"]/div/section/div/div[1]/div[4]/button').click()
+
+        browser.find_element(By.XPATH, '//*[@id="ember79"]/div/section/div/div[1]/div[4]/button').click()
+        time.sleep(2)
+        #
+        # welcome_text_elt = browser.find_element(By.XPATH, "//*[@id='ember94']/p")
+        # welcome_text = welcome_text_elt.text
+        # self.assertEqual("Correct!", welcome_text)
         time.sleep(100)
         browser.quit()
 
